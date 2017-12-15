@@ -1,4 +1,9 @@
 
+html, body
+{
+    background: url("https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/5/50/Wiki-background/revision/latest?cb=20171001210755");
+    background-size: 100%;
+}
 
 .crystals
 {
@@ -9,7 +14,51 @@
 
 .crystal
 {
-    border: 1px solid green;
+    border: 1px solid black;
     height: 200px;
     width: 200px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    background: black;
+    opacity: 0.8;
+}
+
+.crystal:hover
+{   
+    cursor: pointer;
+    box-shadow: 15px 15px 15px red;
+    transform: translate(5px, 50px);
+    transition: box-shadow 0.3s ease-in-out, transform 2s;
+   
+}
+
+#result
+{
+    font-size: 20px;
+    color: white
+}
+
+#previous
+{
+    font-size: 20px;
+    color: white
+}
+
+#win
+{
+    font-size: 20px;
+    color: white
+}
+
+#loss
+{
+    font-size: 20px;
+    color: white
+}
+
+
+
+img
+{
+width:150px;
 }

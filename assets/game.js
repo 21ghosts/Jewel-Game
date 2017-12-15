@@ -9,6 +9,12 @@ var resetAndStart = function()
 {   
     $(".crystals").empty();
 
+    var images = [
+                  'https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/c4/Crystal_weekly_event.png/revision/latest?cb=20151122000423',
+                  'http://vignette2.wikia.nocookie.net/marvel-contestofchampions/images/e/e4/4-Star_Crystal.png/revision/latest?cb=20151122000344',
+                  'https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/2/29/Crystal_generic5.png/revision/latest?cb=20151121235154',
+                  'https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/a/ad/Crystal_generic4.png/revision/latest?cb=20151121235143']
+
     random_result = Math.floor(Math.random() * 69 ) + 30;
     
     
@@ -22,7 +28,12 @@ var resetAndStart = function()
         var crystal = $("<div>");
             crystal.attr({
                 "class": 'crystal',
-                "data-random": random
+                "data-random": random,
+            });
+            crystal.css
+            ({
+                "background-image":"url('" + images[i] + "')",
+                "background-size":"cover"
             });
     
         $(".crystals").append(crystal);
