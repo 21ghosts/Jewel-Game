@@ -15,7 +15,7 @@ var resetAndStart = function()
                   'https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/2/29/Crystal_generic5.png/revision/latest?cb=20151121235154',
                   'https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/a/ad/Crystal_generic4.png/revision/latest?cb=20151121235143']
 
-    random_result = Math.floor(Math.random() * 69 ) + 30;
+    random_result = Math.floor(Math.random() * 111 ) + 19;
     
     
     $("#result").html('Random Result: ' + random_result);
