@@ -83,13 +83,3 @@ $(document).on('click',".crystal", function()
 
 });
 
-// speudo Coding
-
-// a game with 4 jewels and Random Result
-// every crystal needs to have a random number between 1-12
-// a new random number should generate every single time we win or lose
-// to those 4 jewels
-// when clicking any crystal, it sjould add with the previous Result
-// until it equals the total score
-// if it is not eqaul, decrement a loss
-// if it is equal, the we increment a win
